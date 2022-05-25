@@ -21,7 +21,7 @@ function guardar(){
         window.addEventListener("keypress", teclaVerificador);
     } else{
         restearEstadisticas();
-        alert("La palabra ingresada no es valida, recuerda que debe inculir al menos un caracter y debe ser menor que 13");
+        alert("La palabra ingresada no es válida, recuerda que debe inculir al menos un carácter y debe de tener como máximo 12");
     }   
 }
 
