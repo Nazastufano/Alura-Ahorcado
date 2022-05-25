@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Juego del Ahorcado</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <img src="img/Logo.png" alt="Logo A" id="img-a">
+        
+        <div id="botones">
+            <button class="boton" id="boton-iniciar">Iniciar juego</button>
+            <button class="boton" id="boton-new-palabra">Agregar nueva palabra</button>
+        </div>
+        
+        <div id="text-botons" visibility: hidden>
+            <textarea name="text-area" id="text-area" cols="30" rows="10" placeholder="Ingrese una palabra"></textarea>
+            
+            <div id="botones-agregar">
+                <h2><img src="img/bi_exclamation-circle-fill.png" alt="Simbolo de advertencia">Máx. de 13 letras</h2>
+                
+                <button onclick = guardar(); id="boton-guardar" class="boton">Guardar</button>
+                <button onclick = cancelar(); id="boton-cancelar" class="boton">Cancelar</button>
+
+            </div>
+        </div>
+        
+        <section id="canv-boton">
+            <div id="tablero">
+
+            </div>
+
+            <div id="botones-del-canv" visibility: hidden>
+                <button class="boton" id="boton-reiniciar">Nuevo juego</button>
+                <button class="boton" id="boton-desistir">Desistir</button>
+            </div>
+        </section>
+    </body>
+
+    <footer>
+        <p class="piePagina">Bienvenidos, soy Nazareno Stufano y desarrollé esta pagina con las condiciones propuestas dentro del challenge de Alura Latam. Un saludo.</p>
+    </footer>
+
+    <script src="js/crear-tablero.js"></script>
+    <script src="js/crear-palabra.js"></script>
+    <script src="js/crear-lineas.js"></script>
+    <script src="js/verificar-tecla.js"></script>
+    <script src="js/crear-letra.js"></script>
+    <script src="js/crear-horca.js"></script>
+    <script src="js/verificar-letra-correcta.js"></script>
+    <script src="js/crear-perdiste.js"></script>
+    <script src="js/crear-ganar.js"></script>
+    <script src="js/agregar-palabra.js"></script>
+</html>
