@@ -7,9 +7,9 @@ function letraCorrectaVerificador(letra){
 }
 
 function pulsar(e) {
-    if (e.which === 13 && !e.shiftKey) {
-      e.preventDefault();
-      console.log('prevented');
-      return false;
+    if(e.which === 13 && !e.shiftKey) {
+        e.preventDefault();
+        console.log('prevented');
+        return false;
     }
-  }
+}
