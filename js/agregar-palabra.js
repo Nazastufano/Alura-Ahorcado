@@ -13,7 +13,8 @@ function agregarPalabra(){
 }
 
 function guardar(){
-    palabraElegida = textArea.value;
+    palabraElegida = textArea.value.toLowerCase();
+
     if(palabraElegida.length <= 12 && palabraElegida.length > 0){
         crearLineas(palabraElegida);
         document.getElementById("text-botons").style.display = "none";
@@ -35,4 +36,9 @@ function verificar(e){
 	if(e.key.match(/[a-zñ\s]/i)===null) {
 		e.preventDefault();
 	}
+
+    var tecla = e.keyCode;
+    if (tecla === 32) {
+        e.preventDefault();
+    }
 }
