@@ -15,7 +15,7 @@ function agregarPalabra(){
 function guardar(){
     palabraElegida = textArea.value.toLowerCase();
 
-    if(palabraElegida.length <= 12 && palabraElegida.length > 0 &&){
+    if(palabraElegida.length <= 12 && palabraElegida.length > 0){
         crearLineas(palabraElegida);
         document.getElementById("text-botons").style.display = "none";
         document.getElementById("botones-del-canv").style.display = "block";
