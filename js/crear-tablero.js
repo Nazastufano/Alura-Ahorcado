@@ -4,8 +4,8 @@ botonIniciar.addEventListener("click",function(){
     crearLineas();
     
     document.getElementById("botones").style.display = "none";
-    document.getElementById("botones-del-canv").style.display = "block";
-    document.getElementById("canv-boton").style.display = "block";
+    document.getElementById("botones-del-canv").style.display = "flex";
+    document.getElementById("canv-boton").style.display = "flex";
     
     window.addEventListener("keypress", teclaVerificador);
 });

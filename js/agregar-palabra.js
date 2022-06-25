@@ -6,7 +6,7 @@ botonANP.addEventListener("click", agregarPalabra);
 textArea.addEventListener("keypress",verificar);
 
 function agregarPalabra(){
-    divTextBotns.style.display = "block";
+    divTextBotns.style.display = "flex";
     textArea.focus();
     document.getElementById("botones").style.display = "none";
     textArea.value = "";
@@ -18,7 +18,7 @@ function guardar(){
     if(palabraElegida.length <= 12 && palabraElegida.length > 0){
         crearLineas(palabraElegida);
         document.getElementById("text-botons").style.display = "none";
-        document.getElementById("botones-del-canv").style.display = "block";
+        document.getElementById("botones-del-canv").style.display = "flex";
         window.addEventListener("keypress", teclaVerificador);
     } else{
         restearEstadisticas();
@@ -27,7 +27,7 @@ function guardar(){
 }
 
 function cancelar(){
-    document.getElementById("botones").style.display = "block";
+    document.getElementById("botones").style.display = "flex";
     document.getElementById("botones-del-canv").style.display = "none";
     document.getElementById("text-botons").style.display = "none";
 }
