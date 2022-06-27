@@ -1,11 +1,11 @@
-var botonIniciar = document.querySelector("#boton-iniciar");
+var botonIniciar = document.querySelector(".home__iniciar");
 
 botonIniciar.addEventListener("click",function(){ 
     crearLineas();
     
-    document.getElementById("botones").style.display = "none";
-    document.getElementById("botones-del-canv").style.display = "flex";
-    document.getElementById("canv-boton").style.display = "flex";
+    document.querySelector(".principal__home").style.display = "none";
+    document.querySelector(".canvas__botones").style.display = "flex";
+    document.querySelector(".principal__canvas").style.display = "flex";
     
     window.addEventListener("keypress", teclaVerificador);
 });
@@ -22,7 +22,7 @@ function crearTablero(){
 }
 
 function crearLineas(){
-    var tablero = document.querySelector("#tablero");
+    var tablero = document.querySelector(".canvas__tablero");
     var x = 80;
     tablero.appendChild(crearTablero()); 
 

@@ -1,63 +1,64 @@
-body{
+.principal{
     background: #F3F5FC;
     font-family: 'Inter', sans-serif;
 }
 
-#img-a{
+.principal__img--a{
+    left: 20px;
     position: absolute;
     top: 20px;
-    left: 20px;
 }
 
-#botones{
-    margin: 300px auto;
+.principal__home{
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin: 300px auto;
 }
 
 .boton{
-    border-radius: 24px;
     border: 1px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
     display: inline;
     padding: 24px;
     transition: 1s background;
-    cursor: pointer;
+    
 }
 
-#boton-iniciar{
-    width: 280px;
+.home__iniciar{
+    background-color: #0A3871;
+    color: #F3F5FC;
     cursor: pointer;
+    font-size: 16px;
     height: 120px;
-    color: #F3F5FC;
+    width: 280px;
+}
+
+.home__iniciar:hover{
+    background-color: #F3F5FC;
+    color: #0A3871;
+}
+
+.home__newPalabra{
+    background-color: #F3F5FC;
+    color: #0A3871;
     font-size: 16px;
-    background-color: #0A3871;
-}
-
-#boton-iniciar:hover{
-    background-color: #F3F5FC;
-    color: #0A3871;
-}
-
-#boton-new-palabra{
-    width: 260px;
-    margin: 2rem 0 0 0;
-    background-color: #F3F5FC;
-    color: #0A3871;
     font-weight: 400;
-    font-size: 16px;
+    margin: 2rem 0 0 0;
+    width: 260px;
 }
 
-#boton-new-palabra:hover{
-    color: #F3F5FC;
+.home__newPalabra:hover{
     background-color: #0A3871;
+    color: #F3F5FC;
 }
 
 footer{
-    text-align: center;
-    height: 130px;
     background: #0A3871;
     color: #F3F5FC;
+    height: 130px;
+    text-align: center;
 }
 
 .piePagina{
@@ -66,148 +67,147 @@ footer{
 
 /*Aquí inicia el CSS para juego iniciado*/
 
-#canv-boton{
+.principal__canvas{
+    align-items: center;
     display: flex;
     flex-direction: column;
-    margin: 0px auto;
     height: 100%;
     justify-content: center;
-    align-items: center;
+    margin: 0px auto;
 }
 
-#tablero{
+.canvas__tablero{
     margin: 0px auto;
 }
 
 .tablero{
-    width: 100%;
+    background-color: #F3F5FC;
     margin-top: 10%;
-    background-color: #F3F5FC;
+    width: 100%;
 }
 
-#botones-del-canv{
-    margin: 0px 0px 50px 0px;
+.canvas__botones{
     height: 100%;
+    margin: 0px 0px 50px 0px;
 }
 
-#boton-reiniciar{
-    display: inline;
-    width: 260px;
-    margin: 0 1rem 0 0;
+.botones__reiniciar{
+    background-color: #0A3871;
+    color: #F3F5FC;
     cursor: pointer;
-    color: #F3F5FC;
-    font-size: 16px;
-    background-color: #0A3871;
-}
-
-#boton-reiniciar:hover{
-    background-color: #F3F5FC;
-    color: #0A3871;
-}
-
-#boton-desistir{
-    width: 260px;
     display: inline;
-    background-color: #F3F5FC;
-    color: #0A3871;
-    font-weight: 400;
     font-size: 16px;
+    margin: 0 1rem 0 0;
+    width: 260px;
 }
 
-#boton-desistir:hover{
-    color: #F3F5FC;
+.botones__reiniciar:hover{
+    background-color: #F3F5FC;
+    color: #0A3871;
+}
+
+.botones__desistir{
+    background-color: #F3F5FC;
+    color: #0A3871;
+    display: inline;
+    font-size: 16px;
+    font-weight: 400;
+    width: 260px;
+}
+
+.botones__desistir:hover{
     background-color: #0A3871;
+    color: #F3F5FC;
 }
 
 /*Aquí inicia el CSS para agregar nueva palabra*/
 
-#text-botons{
-    margin: 130px auto 180px;
-    flex-direction: column;
+.principal__newWord{
     align-items: center;
+    flex-direction: column;
+    margin: 130px auto 180px;    
 }
 
-#text-area{
-    resize: none;
-    color: #0A3871;
-    outline: 0 none;
-    overflow-y: hidden;
-    font-size: 32px;
+.newWord__textArea{
     background: #F3F5FC;
     border: #F3F5FC;
+    color: #0A3871;
+    font-size: 32px;
+    outline: 0 none;
+    overflow-y: hidden;
+    resize: none;
 }
 
-#botones-agregar{
+.newWord__botones{
     margin: 50px 0px 0px 0px;
 }
 
-h2{
-    position: relative;
+.botones__h2{
     font-size: 14px;
     font-weight: 100;
     margin: 20px 0px 10px 10px;
+    position: relative;
 }
-h2 img{
+.botones__h2 img{
+    left: -9px;
     position: relative;
     top: 3px;
-    left: -9px;
 }
-#boton-guardar{
-    width: 328px;
-    height: 67px;
-    color: #F3F5FC;
-    font-weight: 400;
-    font-size: 16px;
-    border-color: #0A3871;
+.botones__guardar{
     background-color: #0A3871;
-}
-#boton-guardar:hover{
-    background-color: #F3F5FC;
-    color: #0A3871;
     border-color: #0A3871;
-
-}
-#boton-cancelar{
-    width: 328px;
-    height: 67px;
-    background-color: #F3F5FC;
-    color: #0A3871;
-    border-color: #0A3871;
-    font-weight: 400;
-    font-size: 16px;
-}
-#boton-cancelar:hover{
     color: #F3F5FC;
+    font-size: 16px;
+    font-weight: 400;
+    height: 67px;
+    width: 328px;
+}
+.botones__guardar:hover{
+    background-color: #F3F5FC;
     border-color: #0A3871;
+    color: #0A3871;
+}
+.botones__cancelar{
+    background-color: #F3F5FC;
+    border-color: #0A3871;
+    color: #0A3871;
+    font-size: 16px;
+    font-weight: 400;
+    height: 67px;
+    width: 328px;
+}
+.botones__cancelar:hover{
     background-color: #0A3871;
+    border-color: #0A3871;
+    color: #F3F5FC;
 }
 
 @media (max-width:768px){
-    body{
+    .principal{
         /*position: relative;*/
         display: flex;
         flex-direction: column;
         min-height: 100vh;
     }
-    #text-area{
+    .newWord__textArea{
         width: 80vw;
     }
 
-    #botones-agregar{
+    .newWord__botones{
+        align-items: center;
         display: flex;
         flex-direction: column;
-        align-items: center;
         width: 80vw;
     }
 
-    #canv-boton{
+    .principal__canvas{
         /*height: 90vh;*/
     }
 
-    #botones-del-canv{
-        margin-top: 5%;
+    .canvas__botones{
         flex-direction: column;
         justify-content: center;
+        margin-top: 5%;
     }
 
     footer{

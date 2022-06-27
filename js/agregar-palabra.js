@@ -1,6 +1,6 @@
-var divTextBotns = document.getElementById("text-botons");
-var textArea = document.getElementById("text-area");
-var botonANP = document.querySelector("#boton-new-palabra");
+var divTextBotns = document.querySelector(".principal__newWord");
+var textArea = document.querySelector(".newWord__textArea");
+var botonANP = document.querySelector(".home__newPalabra");
 
 botonANP.addEventListener("click", agregarPalabra);
 textArea.addEventListener("keypress",verificar);
@@ -8,7 +8,7 @@ textArea.addEventListener("keypress",verificar);
 function agregarPalabra(){
     divTextBotns.style.display = "flex";
     textArea.focus();
-    document.getElementById("botones").style.display = "none";
+    document.querySelector(".principal__home").style.display = "none";
     textArea.value = "";
 }
 
@@ -17,8 +17,8 @@ function guardar(){
 
     if(palabraElegida.length <= 12 && palabraElegida.length > 0){
         crearLineas(palabraElegida);
-        document.getElementById("text-botons").style.display = "none";
-        document.getElementById("botones-del-canv").style.display = "flex";
+        document.querySelector(".principal__newWord").style.display = "none";
+        document.querySelector(".canvas__botones").style.display = "flex";
         window.addEventListener("keypress", teclaVerificador);
     } else{
         restearEstadisticas();
@@ -27,9 +27,9 @@ function guardar(){
 }
 
 function cancelar(){
-    document.getElementById("botones").style.display = "flex";
-    document.getElementById("botones-del-canv").style.display = "none";
-    document.getElementById("text-botons").style.display = "none";
+    document.querySelector(".principal__home").style.display = "flex";
+    document.querySelector(".canvas__botones").style.display = "none";
+    document.querySelector(".principal__newWord").style.display = "none";
 }
 
 function verificar(e){
