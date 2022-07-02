@@ -6,4 +6,4 @@ Está hecho a base de las condiciones propuestas en el Challenge N°2 de Alura.
 Es una prueba sobre los conocimientos aprendidos y lo visto dentro de los cursos en alura.
 Forma parte del programa ONE de Oracle.
 
-Va a recibir algunas modificación con frecuencia porque soy consciente que hay mucho por mejorar. A medida que mejorando arreglaré errores o agregaré buenas practicas.
+Va a recibir algunas modificación con frecuencia porque soy consciente que hay mucho por mejorar. A medida que vaya aprendiendo arreglaré errores o agregaré buenas practicas.
