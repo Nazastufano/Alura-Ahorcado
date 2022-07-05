@@ -54,15 +54,19 @@
     color: #F3F5FC;
 }
 
-footer{
+.footer{
     background: #0A3871;
     color: #F3F5FC;
+    display: flex;
+    flex-direction: column;
     height: 130px;
+    justify-content: center;
     text-align: center;
 }
 
-.piePagina{
-    padding: 65px 0px 0px 0px;
+
+.footer__p{
+    padding: 1rem 0px 0px 0px;
 }
 
 /*Aquí inicia el CSS para juego iniciado*/
